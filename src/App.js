@@ -1,19 +1,25 @@
 import React from 'react';
 import './App.css';
-import TestFunction from './testFile';
 import myImage from "./XP1_0006.jpg"
+import { Link } from 'react-router-dom';
+
+
 
 
 
 function App() {
   return (
     <>
-      <header className="App">
-        
-      <h1>Hello react</h1>
-      <TestFunction ></TestFunction>
-      <img src={myImage} alt='mql mql'></img>
-      </header>
+      
+      <ul>
+            <li><Link to= "./">ЗА НАС</Link></li>
+            <li><Link to= "./serves">услуги</Link></li>
+            <li><Link to= "./contact">КОНТАКТ</Link></li>
+        </ul>
+     
+      <img className = "img" src={myImage} alt='mql mql'></img>
+     
+    
      
     </>
   );
